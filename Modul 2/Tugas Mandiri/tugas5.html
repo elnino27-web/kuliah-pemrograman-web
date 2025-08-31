@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas 5</title>
+    <style>
+      body {
+        background-color: #e76f61; /* Warna latar belakang merah muda */
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        height: 100vh;
+      }
+      table {
+        border-collapse: collapse;
+        position: fixed;
+        bottom: 30px;  /* Jarak dari bawah */
+        right: 30px;   /* Jarak dari kanan */
+      }
+      td {
+        border: 5px solid #e76f61;
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #ddd;
+      }
+      .colspan {
+        background-color: #7bdcb5;
+        color: white;
+      }
+      .rowspan {
+        background-color: #783772;
+        color: rgb(221, 217, 88);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td></td>
+        <td colspan="2" class="colspan">colspan = "2"</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="rowspan">rowspan = "2"</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

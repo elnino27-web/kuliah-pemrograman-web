@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas 1</title>
+  </head>
+  <body>
+    <h2>Contoh Form Input</h2>
+
+    <!-- Radio Button -->
+    <h3>Radio Button</h3>
+    <form>
+      Jenis Kelamin: <br />
+      <input type="radio" name="jk" value="laki" /> Laki-laki <br />
+      <input type="radio" name="jk" value="perempuan" /> Perempuan <br />
+    </form>
+
+    <!-- Drop Down -->
+    <h3>Drop Down</h3>
+    <form>
+      Pilih Prodi:
+      <select name="prodi">
+        <option>Teknik Komputer</option>
+        <option>Pendidikan Teknik Informatika & Komputer</option>
+      </select>
+    </form>
+
+    <!-- Text Area -->
+    <h3>Text Area</h3>
+    <form>
+      Alamat: <br />
+      <textarea name="alamat" rows="4" cols="40"></textarea>
+    </form>
+
+    <hr />
+
+    <h2>Contoh Frame</h2>
+
+    <!-- Frame Horizontal -->
+    <h3>Frame Horizontal</h3>
+    <iframe src="https://www.ilovepdf.com" width="49%" height="200"></iframe>
+    <iframe src="https://www.wikipedia.org" width="49%" height="200"></iframe>
+
+    <!-- Frame Vertikal -->
+    <h3>Frame Vertikal</h3>
+    <iframe src="https://www.openai.com" width="100%" height="100"></iframe>
+    <iframe src="https://www.ilovepdf.com" width="100%" height="100"></iframe>
+
+    <!-- Frame Gabungan H-V -->
+    <h3>Frame Gabungan H-V</h3>
+    <table border="1" width="100%" height="300">
+      <tr>
+        <td width="50%">
+          <iframe
+            src="https://www.ilovepdf.com"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </td>
+        <td width="50%">
+          <iframe
+            src="https://www.wikipedia.org"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <iframe
+            src="https://www.openai.com"
+            width="100%"
+            height="150"
+          ></iframe>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
