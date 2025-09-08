@@ -1,185 +1,155 @@
-Analisis File kontak.html
+1. <!DOCTYPE html>
+   → Menentukan bahwa dokumen ini menggunakan standar HTML5.
 
-Berikut adalah analisis baris per baris dari file kontak.html yang menampilkan halaman Contact dengan HTML, CSS, dan animasi menggunakan AOS:
+2. <html lang="en">
+   → Elemen root HTML dengan bahasa utama "English".
 
-Bagian Struktur Dasar HTML
+3. <head> ... </head>
+   → Bagian untuk metadata, judul, dan style halaman.
 
-<!DOCTYPE html>
-→ Mendeklarasikan dokumen ini menggunakan standar HTML5.
+4. <meta charset="UTF-8" />
+   → Mengatur encoding karakter menjadi UTF-8 agar mendukung simbol dan teks global.
 
-<html lang="en">
-→ Elemen pembuka HTML dengan atribut lang="en" menandakan bahasa utama halaman adalah Inggris.
+5. <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   → Membuat halaman responsive pada perangkat mobile.
 
-<head>
-→ Bagian untuk metadata, judul halaman, dan pemanggilan resource eksternal.
+6. <title>Contact</title>
+   → Judul tab browser yang ditampilkan adalah "Contact".
 
-<meta charset="UTF-8" />
-→ Mengatur encoding karakter menjadi UTF-8 agar mendukung semua simbol.
+7. <!-- AOS CSS -->
+   → Komentar penanda untuk library AOS (Animate On Scroll).
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-→ Membuat tampilan responsif agar sesuai di berbagai ukuran layar.
+8. <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   → Menghubungkan stylesheet eksternal dari AOS untuk animasi.
 
-<title>Contact</title>
-→ Judul halaman yang tampil pada tab browser.
+9. <!-- Boxicons CSS -->
+   → Komentar penanda untuk library ikon Boxicons.
 
-Bagian Link Eksternal CSS
+10. <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    → Memanggil Boxicons untuk digunakan sebagai ikon di halaman.
 
-<!-- AOS CSS -->
-→ Komentar penanda untuk stylesheet AOS.
+11. <style> ... </style>
+    → Bagian CSS internal untuk styling halaman.
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-→ Mengimpor CSS AOS (Animate On Scroll).
+12. * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    → Reset CSS global dan penggunaan font default.
 
-<!-- Boxicons CSS -->
-→ Komentar penanda untuk stylesheet ikon Boxicons.
+13. body { background-color: #0e1217; height: 100vh; display: flex; justify-content: center; align-items: center; }
+    → Background hitam kebiruan, konten diposisikan di tengah layar.
 
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-→ Mengimpor ikon Boxicons agar bisa dipakai di halaman.
+14. .main-section { width: 90%; max-width: 1200px; min-height: 80%; background: #4ad0ee1b; backdrop-filter: blur(10px); border-radius: 50px; box-shadow: 5px 5px 20px #4acfee; display: flex; flex-direction: column; padding: 30px 20px; margin: auto; }
+    → Container utama dengan efek blur, transparansi, dan bayangan.
 
-Bagian CSS Internal
+15. nav { display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
+    → Navigasi horizontal dengan logo di kiri dan menu di kanan.
 
-<style>
-→ Membuka blok CSS internal.
+16. nav h1 { color: white; font-size: 30px; font-weight: 900; }
+    → Logo teks besar, putih, bold.
 
-Reset dan Font
+17. nav h1 span { color: #4acfee; }
+    → Warna biru khusus untuk teks di dalam <span>.
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
-→ Reset CSS: menghapus margin/padding default, mengatur box-sizing, dan menetapkan font standar.
+18. nav ul { list-style: none; display: flex; gap: 10px; }
+    → Mengatur menu navigasi horizontal tanpa bullet list.
 
-body { background-color: #0e1217; ... }
-→ Mengatur body agar:
+19. nav ul li a { ... }
+    → Link navigasi dengan border biru, radius 15px, teks putih, bold, efek transisi hover.
 
-Background hitam kebiruan
+20. nav ul li a:hover, nav ul li a.active { background-color: #4acfee; color: #0e1217; box-shadow: 0 0 10px #4acfee; }
+    → Efek hover dan link aktif: latar biru, teks hitam, ada glow.
 
-Full height (100vh)
+21. .hero { display: flex; flex-direction: column; align-items: flex-start; padding: 20px 7%; color: white; }
+    → Bagian hero berisi konten utama (judul + kontak).
 
-Menggunakan flexbox untuk center isi halaman.
+22. .hero-info h2 { margin-top: 20px; font-size: 30px; text-transform: uppercase; background: linear-gradient(...); background-clip: text; -webkit-text-fill-color: transparent; animation: animate-gradient 2.5s infinite; }
+    → Judul "KONTAK" dengan efek teks gradient animasi.
 
-Main Section
+23. @keyframes animate-gradient { to { background-position: 200%; } }
+    → Animasi gradient bergerak secara horizontal.
 
-.main-section { ... }
-→ Container utama dengan:
+24. .contact-container { display: flex; gap: 20px; margin-top: 30px; width: 100%; }
+    → Kontainer utama kontak dengan dua bagian (kiri dan kanan).
 
-Lebar 90%, maksimum 1200px
+25. .contact-box { flex: 1; padding: 25px; border: 2px solid #4acfee; border-radius: 20px; background: rgba(255,255,255,0.03); box-shadow: 0 0 15px rgba(74,207,238,0.3); }
+    → Style kotak kontak dengan border biru dan efek transparan.
 
-Background transparan + efek blur (backdrop-filter)
+26. .contact-box:hover { border: 2px solid rgba(255,255,255,0.03); box-shadow: 0 0 20px #4acfee; }
+    → Efek hover: glow lebih kuat.
 
-Border-radius 50px + shadow biru
+27. .contact-left h3 { color: #4acfee; font-size: 40px; margin-bottom: 15px; }
+    → Judul besar pada kotak kiri.
 
-Menggunakan flexbox arah kolom.
+28. .contact-left p { color: #ddd; line-height: 1.6; font-size: 20px; }
+    → Paragraf penjelasan pada kotak kiri.
 
-Navbar
+29. .contact-right form { display: flex; flex-direction: column; gap: 12px; }
+    → Form input pada kotak kanan, disusun vertikal.
 
-nav { display: flex; justify-content: space-between; ... }
-→ Navbar horizontal dengan logo di kiri dan menu di kanan.
+30. .contact-right input, .contact-right textarea { background: #a7eedb; padding: 12px; border: none; border-radius: 10px; font-size: 14px; }
+    → Input dan textarea dengan warna latar hijau muda dan border radius.
 
-nav h1 { color: white; font-size: 30px; font-weight: 900; }
-→ Logo teks besar.
+31. .contact-right textarea { resize: none; height: 120px; }
+    → Textarea tidak bisa di-resize, tinggi tetap 120px.
 
-nav h1 span { color: #4acfee; }
-→ Memberi warna biru khusus pada bagian <span>.
+32. .contact-right button { padding: 12px; border: none; border-radius: 10px; background: #4acfee; color: #0e1217; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+    → Tombol submit biru dengan teks bold.
 
-nav ul { list-style: none; display: flex; gap: 10px; }
-→ Daftar menu horizontal tanpa bullet.
+33. .contact-right button:hover { background: #00a4c7; color: white; box-shadow: 0 0 12px #4acfee; }
+    → Efek hover tombol: warna biru lebih gelap, teks putih, glow biru.
 
-nav ul li a { ... }
-→ Styling link menu: tombol kecil dengan border biru, teks putih.
+34. @media (max-width: 768px) { .contact-container { flex-direction: column; } }
+    → Responsive design: pada layar kecil, dua kolom kontak menjadi satu kolom vertikal.
 
-nav ul li a:hover, nav ul li a.active { ... }
-→ Saat hover/aktif: background biru, teks hitam, dan efek glow.
+35. <body> <section class="main-section"> ... </section> </body>
+    → Struktur utama body dengan satu section.
 
-Hero Section
+36. <nav> ... </nav>
+    → Navigasi halaman dengan logo "27Elnino" dan menu (Home, About Me, Education, Award, Contact).
 
-.hero { display: flex; flex-direction: column; align-items:flex-start; ... }
-→ Bagian utama halaman kontak, diatur kolom agar konten tersusun vertikal.
+37. <h1 data-aos="zoom-in"> <span>27</span>Elnino </h1>
+    → Logo dengan animasi zoom-in.
 
-.hero-info h2 { ... }
-→ Judul besar KONTAK dengan efek gradient animasi.
+38. <ul> <li><a href="...">...</a></li> ... </ul>
+    → Menu navigasi, dengan "Contact" sebagai halaman aktif.
 
-@keyframes animate-gradient { to { background-position: 200%; } }
-→ Membuat animasi gradasi bergerak dari kiri ke kanan.
+39. <div class="hero"> ... </div>
+    → Bagian hero berisi judul dan dua kotak kontak.
 
-Contact Section
+40. <h2 data-aos="fade-left">KONTAK</h2>
+    → Judul utama dengan animasi fade-left.
 
-.contact-container { display: flex; gap: 20px; margin-top: 30px; ... }
-→ Container untuk dua kolom (kiri = teks, kanan = form).
+41. <div class="contact-container"> ... </div>
+    → Kontainer dengan dua kolom (kiri dan kanan).
 
-.contact-box { ... }
-→ Styling untuk kotak kontak: border biru, background transparan, shadow glow.
+42. <div class="contact-box contact-left"> <h3>Mari Terhubung!</h3> <p>...</p> </div>
+    → Kotak kiri berisi teks ajakan untuk menghubungi.
 
-.contact-box:hover { ... }
-→ Saat hover: efek glow lebih kuat + border transparan.
+43. <div class="contact-box contact-right"> <form> ... </form> </div>
+    → Kotak kanan berisi form input.
 
-Bagian Kiri (Teks)
+44. <form action="#" method="post"> ... </form>
+    → Formulir sederhana dengan input teks, email, textarea pesan, dan tombol submit.
 
-.contact-left h3 { color: #4acfee; font-size: 40px; ... }
-→ Judul besar di kotak kiri.
+45. <input type="text" placeholder="Nama Anda" required />
+    → Input teks wajib diisi untuk nama.
 
-.contact-left p { color: #ddd; line-height: 1.6; font-size: 20px; }
-→ Paragraf deskriptif dengan teks abu terang.
+46. <input type="email" placeholder="Email Anda" required />
+    → Input email wajib diisi.
 
-Bagian Kanan (Form)
+47. <textarea placeholder="Pesan Anda..." required></textarea>
+    → Kotak teks untuk pesan.
 
-.contact-right form { display: flex; flex-direction: column; gap: 12px; }
-→ Form input disusun secara vertikal dengan jarak antar elemen.
+48. <button type="submit">Kirim Pesan</button>
+    → Tombol untuk mengirim form.
 
-.contact-right input, .contact-right textarea { ... }
-→ Input box hijau muda, border radius, tanpa border, teks nyaman dibaca.
+49. <!-- AOS JS -->
+    → Komentar penanda untuk JavaScript AOS.
 
-.contact-right textarea { resize: none; height: 120px; }
-→ Membatasi textarea agar tidak bisa diubah ukuran manual.
+50. <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    → Menambahkan file eksternal AOS JS.
 
-.contact-right button { ... }
-→ Tombol biru dengan font tebal.
+51. <script> AOS.init(); </script>
+    → Inisialisasi AOS agar animasi berjalan.
 
-.contact-right button:hover { ... }
-→ Efek hover: biru lebih gelap, teks putih, glowing.
-
-Responsif
-
-@media (max-width: 768px) { .contact-container { flex-direction: column; } }
-→ Jika layar kecil, layout dua kolom berubah menjadi satu kolom vertikal.
-
-Bagian Body HTML
-
-<body>
-→ Awal bagian konten utama.
-
-<section class="main-section">
-→ Container utama halaman.
-
-Navbar
-
-<nav> … </nav>
-→ Bagian navigasi dengan logo <h1><span>27</span>Elnino</h1> dan daftar menu (ul li a).
-→ Menu: Home, About Me, Education, Award, Contact (aktif).
-
-Hero + Contact
-
-<div class="hero">
-→ Container untuk hero section.
-
-<div class="hero-info"> <h2>KONTAK</h2> </div>
-→ Judul halaman "KONTAK" dengan efek animasi AOS.
-
-<div class="contact-container"> ... </div>
-→ Container dua kolom.
-
-Kiri: <div class="contact-box contact-left"> berisi teks ajakan untuk berhubungan.
-
-Kanan: <div class="contact-box contact-right"> berisi form input (nama, email, pesan, tombol kirim).
-
-Bagian Script
-
-<!-- AOS JS -->
-→ Komentar penanda script AOS.
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-→ Import file JS AOS.
-
-<script> AOS.init(); </script>
-→ Inisialisasi animasi AOS.
-
-</body> dan </html>
-→ Penutup dokumen HTML.
-
+52. </html>
+    → Penutup dokumen HTML.

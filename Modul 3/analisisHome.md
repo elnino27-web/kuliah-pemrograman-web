@@ -126,14 +126,3 @@
 
 34. `</html>`  
     Menutup file HTML.
-
----
-
-## Kesimpulan
-File ini adalah halaman utama **home.html** dengan fitur:
-- **Desain modern**: efek blur, shadow glow, gradient teks, tombol interaktif.
-- **Animasi**: menggunakan library AOS untuk transisi halus.
-- **Ikon sosial media**: dari Boxicons, memudahkan akses ke profil online.
-- **Responsif**: mendukung tampilan di laptop, tablet, hingga HP kecil.
-
----

@@ -185,13 +185,3 @@ Berikut adalah analisis baris per baris dari file `prestasi.html` yang menampilk
 
 39. `</body>` dan `</html>`  
     → Penutup dokumen HTML.
-
----
-
-## Kesimpulan
-
-File `prestasi.html` ini berfungsi sebagai halaman khusus untuk menampilkan **daftar prestasi/award** dengan desain modern dan animasi interaktif.  
-Struktur halaman dibuat rapi menggunakan **HTML5** dan diperindah dengan **CSS grid, flexbox, efek gradient, serta animasi AOS**.  
-Secara keseluruhan, halaman ini berhasil menampilkan informasi prestasi dengan tampilan yang menarik, responsif, dan mudah dipahami pengunjung.  
-
----
