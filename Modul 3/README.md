@@ -3,14 +3,18 @@
 Proyek ini adalah website portofolio pribadi **Washiatul Akmal** yang terdiri dari 5 halaman utama. Setiap halaman didesain menggunakan **HTML5**, **CSS3**, **Boxicons**, dan **AOS (Animate On Scroll)** untuk animasi.  
 
 ## Daftar File
-1. `home.html` → Halaman utama portofolio.  
+1. `home.html` → Halaman utama (Home) portofolio.  
 2. `tentang-saya.html` → Halaman About Me.  
 3. `pendidikan.html` → Halaman Education.  
 4. `prestasi.html` → Halaman Award.  
 5. `kontak.html` → Halaman Contact.
+6. `fotoUtama.jpg` → Foto yang diletakkan pada halaman utama (Home).
+7. `fotoProfil.jpg` → Foto yang diletakkan pada About Me.
+8. `fotoEdu.jpg` → Foto yang diletakkan pada halaman Education.
 
 
-
+---
+---
 # Analisis File `home.html`
 
 File ini adalah halaman utama website portofolio **Washiatul Akmal**, berfungsi sebagai **landing page** dengan tampilan foto, perkenalan singkat, tombol kontak, dan link ke media sosial.
