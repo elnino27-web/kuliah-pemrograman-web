@@ -188,7 +188,8 @@ Halaman `home.html` berfungsi sebagai **halaman utama portofolio**, dengan fitur
 - Responsif untuk desktop & mobile.  
 
 
-
+---
+---
 # Analisis File `tentang-saya.html`
 
 Berikut adalah analisis baris per baris dari file `tentang-saya.html` yang menampilkan halaman **About Me / Tentang Saya** dengan HTML, CSS, dan animasi menggunakan AOS (Animate On Scroll):
@@ -402,7 +403,8 @@ File `tentang-saya.html` menampilkan halaman **About Me** dengan:
 - **Desain responsif** untuk mobile.  
 
 
-
+---
+---
 # Analisis File `pendidikan.html`
 
 Berikut adalah analisis baris per baris dari file `pendidikan.html` yang menampilkan halaman **Education / Pendidikan** dengan HTML, CSS, dan animasi AOS (Animate On Scroll):
@@ -607,7 +609,8 @@ File `pendidikan.html` menampilkan halaman **Education** dengan:
 - **Desain responsif** untuk mobile.  
 
 
-
+---
+---
 # Analisis File `prestasi.html`
 
 Halaman ini menampilkan **Prestasi (Award)** dengan desain modern, animasi scroll, dan kartu prestasi.
@@ -793,7 +796,8 @@ File `prestasi.html` menampilkan halaman **Prestasi** dengan:
 - **Desain responsif** untuk layar kecil.  
 
 
-
+---
+---
 # Analisis File `kontak.html`
 
 File ini adalah halaman **Contact (Kontak)** pada website portfolio, menampilkan form pesan dan informasi kontak dengan desain modern dan animasi AOS.
