@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas 4</title>
+  </head>
+  <body>
+    <h2>Hitung Volume Bangun Ruang</h2>
+
+    <h3>Kubus</h3>
+    Sisi: <input type="text" id="sisi" /><br />
+    <button onclick="hitungKubus()">Hitung Volume Kubus</button>
+    <p>Volume Kubus: <span id="vkubus"></span></p>
+
+    <h3>Balok</h3>
+    Panjang: <input type="text" id="panjang" /><br />
+    Lebar: <input type="text" id="lebar" /><br />
+    Tinggi: <input type="text" id="tinggi" /><br />
+    <button onclick="hitungBalok()">Hitung Volume Balok</button>
+    <p>Volume Balok: <span id="vbalok"></span></p>
+
+    <h3>Tabung</h3>
+    Jari-jari: <input type="text" id="jari" /><br />
+    Tinggi: <input type="text" id="ttabung" /><br />
+    <button onclick="hitungTabung()">Hitung Volume Tabung</button>
+    <p>Volume Tabung: <span id="vtabung"></span></p>
+
+    <script language = "JavaScript">
+      function hitungKubus() {
+        var s = parseFloat(document.getElementById("sisi").value);
+        var volume = s * s * s;
+        document.getElementById("vkubus").innerText = volume;
+      }
+
+      function hitungBalok() {
+        var p = parseFloat(document.getElementById("panjang").value);
+        var l = parseFloat(document.getElementById("lebar").value);
+        var t = parseFloat(document.getElementById("tinggi").value);
+        var volume = p * l * t;
+        document.getElementById("vbalok").innerText = volume;
+      }
+
+      function hitungTabung() {
+        var r = parseFloat(document.getElementById("jari").value);
+        var t = parseFloat(document.getElementById("ttabung").value);
+        var volume = 3.14 * r * r * t;
+        document.getElementById("vtabung").innerText = volume;
+      }
+    </script>
+  </body>
+</html>
