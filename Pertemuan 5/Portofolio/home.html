@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Akmal</title>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset dan Font */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #0e1217;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-section {
+        width: 90%;
+        max-width: 1200px;
+        height: 80%;
+        background-color: #4ad0ee1b;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px 1px #4acfee;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 20px;
+        margin: auto;
+      }
+
+      /* Navbar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+      }
+
+      nav h1 {
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      nav h1 span {
+        color: #4acfee;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+      }
+
+      nav ul li a {
+        display: inline-block;
+        padding: 6px 14px;
+        border: 2px solid #4acfee;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background-color: #4acfee;
+        color: #0e1217;
+        box-shadow: 0 0 10px #4acfee;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        align-items: flex-start; /* supaya konten dimulai dari atas */
+        padding: 50px 10%; /* atas 50px, kiri & kanan 10% */
+        color: white;
+        justify-content: space-between;
+      }
+
+      .hero-info h1 {
+        font-size: 60px;
+      }
+
+      .hero-info h2 {
+        margin-top: 20px;
+        font-size: 30px;
+        text-transform: uppercase;
+        background: linear-gradient(
+          to right,
+          #4acfee,
+          #53f8c9,
+          #ae39dc,
+          #6070fd,
+          #5bbdff,
+          #cb3359,
+          #4acfee
+        );
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gradient 2.5s linear infinite;
+      }
+
+      .hero-info p {
+        max-width: 450px;
+        margin-top: 7px;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      @keyframes animate-gradient {
+        to {
+          background-position: 200%;
+        }
+      }
+
+      /* Buttons */
+      .Buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .btn {
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #4acfee;
+        border: 2px solid #4acfee;
+        border-radius: 40px;
+        box-shadow: 0 0 10px #4acfee;
+        font-size: 16px;
+        font-weight: 900;
+        color: #0e1217;
+        cursor: pointer;
+        margin-right: 15px;
+        transition: 0.3s;
+        white-space: nowrap;
+      }
+
+      .btn:hover {
+        background-color: transparent;
+        box-shadow: none;
+        color: #4acfee;
+      }
+
+      /* Social Icons */
+      .ul-icons {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+      }
+
+      .ul-icons li {
+        list-style: none;
+      }
+
+      .ul-icons a {
+        display: inline-flex;
+        padding: 8px;
+        border: 2px solid #4acfee;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #4acfee;
+        text-decoration: none;
+        margin: 0 7px;
+        transition: 0.3s;
+      }
+
+      .ul-icons a:hover {
+        background: #4acfee;
+        color: #0e1217;
+        box-shadow: 0 0 10px #4acfee;
+      }
+
+      /* Hero Image */
+      .hero-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: 0 0 10px #4eddfd;
+        transition: 0.5s;
+        margin-top: 30px;
+      }
+
+      .hero-img:hover {
+        box-shadow: 0 0 25px #4acfee;
+      }
+
+      .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-img {
+          width: 400px;
+          height: 400px;
+          margin: 30px 0;
+        }
+
+        .Buttons {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        nav ul {
+          display: none;
+        }
+      }
+
+      @media (max-width: 440px) {
+        .hero h1 {
+          font-size: 40px;
+        }
+        .hero-img {
+          width: 350px;
+          height: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-section">
+      <!-- Navbar -->
+      <nav>
+        <h1 data-aos="zoom-in" data-aos-duration="1000">
+          <span>27</span>Elnino
+        </h1>
+        <ul>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <a class="active" href="home.html">Home</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <a href="edu.html">Education</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a href="award.html">Award</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-info">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            Hi, Saya
+          </h1>
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            Washiatul Akmal
+          </h1>
+          <h2
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
+            Mahasiswa Informatika
+          </h2>
+          <p
+            style="font-style: justify"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
+            Selamat datang di website saya! Di sini Anda dapat menemukan
+            informasi tentang diri saya, pendidikan, minat, dan sosial media
+            saya. Selamat Berkenalan!!
+          </p>
+
+          <!-- Buttons -->
+          <div class="Buttons">
+            <a
+              class="btn"
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+              data-aos-delay="1100"
+            >
+              Follow Me
+            </a>
+            <ul class="ul-icons">
+              <li>
+                <a
+                  href="https://github.com/elnino27-web"
+                  target="_blank"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1200"
+                  ><i class="bx bxl-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/washiatul-akmal-882495382/"
+                  target="_blank"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1300"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/27_elnino/"
+                  target="_blank"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1400"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@elnino.27"
+                  target="_blank"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1500"
+                  ><i class="bx bxl-tiktok"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
+          <img src="fotoUtama.jpg" alt="person-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

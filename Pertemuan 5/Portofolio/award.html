@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Award</title>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset dan Font */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #0e1217;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-section {
+        width: 90%;
+        max-width: 1200px;
+        height: 80%;
+        background-color: #4ad0ee1b;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px 1px #4acfee;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        margin: auto;
+      }
+
+      /* Navbar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+      }
+
+      nav h1 {
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      nav h1 span {
+        color: #4acfee;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+      }
+
+      nav ul li a {
+        display: inline-block;
+        padding: 6px 14px;
+        border: 2px solid #4acfee;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background-color: #4acfee;
+        color: #0e1217;
+        box-shadow: 0 0 10px #4acfee;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 7%;
+        color: white;
+      }
+
+      .hero-info h2 {
+        margin-top: 20px;
+        font-size: 30px;
+        text-transform: uppercase;
+        background: linear-gradient(
+          to right,
+          #4acfee,
+          #53f8c9,
+          #ae39dc,
+          #6070fd,
+          #5bbdff,
+          #cb3359,
+          #4acfee
+        );
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gradient 2.5s linear infinite;
+      }
+
+      @keyframes animate-gradient {
+        to {
+          background-position: 200%;
+        }
+      }
+
+      /* Kotak-kotak pendidikan */
+      .education-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .edu-card {
+        border: 3px solid #4acfee;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .edu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px #4acfee;
+        border: 3px solid rgba(225, 225, 225, 0.05);
+      }
+
+      .edu-card h4 {
+        font-size: 10px;
+        text-align: center;
+        color: #4acfee;
+        margin-bottom: 10px;
+      }
+
+      .edu-card p {
+        font-size: 12px;
+        color: white;
+      }
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav ul {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-section">
+      <!-- Navbar -->
+      <nav>
+        <h1 data-aos="zoom-in" data-aos-duration="1000">
+          <span>27</span>Elnino
+        </h1>
+        <ul>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <a href="home.html">Home</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <a href="edu.html">Education</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a class="active" href="award.html">Award</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <!-- Bagian info -->
+        <div class="hero-info">
+          <h2
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
+            PRESTASI
+          </h2>
+          <br />
+          <div class="education-boxes">
+            <div class="edu-card" data-aos="zoom-in" data-aos-duration="1000">
+              <h4>Perwakilan Sekolah Olimpiade Matematika Tingkat Kabupaten</h4>
+              <p>Tahun 2023</p>
+            </div>
+
+            <div
+              class="edu-card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <h4>Perwakilan Sekolah Olimpiade Fisika Tingkat Kabupaten</h4>
+              <p>Tahun 2022</p>
+            </div>
+
+            <div
+              class="edu-card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <h4>Runner UP 2 GenRe Se-Kabupaten Sinjai</h4>
+              <p>Tahun 2021</p>
+            </div>
+
+            <div
+              class="edu-card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <h4>
+                5 Besar Olimpiade Matematika Tingkat SMP Se-Kabupaten Sinjai
+              </h4>
+              <p>Tahun 2019</p>
+            </div>
+            <div
+              class="edu-card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+            >
+              <h4>
+                3 Besar Olimpiade Matematika Tingkat SD Se-Kecamatan Sinjai
+                Tengah
+              </h4>
+              <p>Tahun 2018</p>
+            </div>
+            <div
+              class="edu-card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
+              <h4>
+                Runner Up Cerdas Cermat Tingkat SMP Se-Kabupaten Sinjai oleh
+                Bank Rakyat Indonesia (BRI)
+              </h4>
+              <p>Tahun 2017</p>
+            </div>
+            <div
+              class="edu-card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+            >
+              <h4>Runner Up Wisudawan TK/TPA Se-Kabupaten Sinjai</h4>
+              <p>Tahun 2016</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
