@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kedai Nayra</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Script Tailwinds CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff8c00",
+              bg: "#010101",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .navbar-nav.active {
+        right: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-bg text-white">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar-container fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-5 px-[7%] bg-black/80 border-b border-[#843806]"
+    >
+      <a href="#" class="text-3xl font-bold italic text-white"
+        >kedai<span class="text-primary">nayra</span>.</a
+      >
+
+      <div class="hidden md:flex">
+        <a
+          href="#home"
+          class="relative inline-block mx-4 pb-1 text-lg text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="relative inline-block mx-4 pb-1 text-lg text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100"
+          >Tentang Kami</a
+        >
+        <a
+          href="#menu"
+          class="relative inline-block mx-4 pb-1 text-lg text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100"
+          >Menu</a
+        >
+        <a
+          href="#reservation"
+          class="relative inline-block mx-4 pb-1 text-lg text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100"
+          >Reservasi</a
+        >
+        <a
+          href="#contact"
+          class="relative inline-block mx-4 pb-1 text-lg text-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100"
+          >Kontak</a
+        >
+      </div>
+
+      <div
+        class="navbar-nav absolute top-full right-[-100%] md:hidden bg-white w-72 h-auto rounded-bl-lg shadow-lg transition-all duration-300"
+      >
+        <a
+          href="#home"
+          class="block m-6 p-2 text-2xl text-bg hover:text-primary"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block m-6 p-2 text-2xl text-bg hover:text-primary"
+          >Tentang Kami</a
+        >
+        <a
+          href="#menu"
+          class="block m-6 p-2 text-2xl text-bg hover:text-primary"
+          >Menu</a
+        >
+        <a
+          href="#reservation"
+          class="block m-6 p-2 text-2xl text-bg hover:text-primary"
+          >Reservasi</a
+        >
+        <a
+          href="#contact"
+          class="block m-6 p-2 text-2xl text-bg hover:text-primary"
+          >Kontak</a
+        >
+      </div>
+
+      <div class="flex items-center">
+        <img
+          src="IMG/logo.jpeg"
+          alt="Logo Kedai"
+          class="w-8 h-8 rounded-full object-cover"
+        />
+        <a href="#" id="hamburger-menu" class="md:hidden ml-4"
+          ><i data-feather="menu"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+    <section
+      class="min-h-screen flex items-center bg-cover bg-center relative"
+      style="background-image: url('IMG/header-bg.jpeg')"
+      id="home"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"
+      ></div>
+      <main class="relative py-5 px-[7%] max-w-4xl">
+        <h1
+          class="text-5xl md:text-7xl font-bold text-white leading-tight"
+          style="text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5)"
+        >
+          Sensasi Pedas Bikin <span class="text-primary">Nagih!</span>
+        </h1>
+        <p
+          class="text-lg mt-4 font-light leading-relaxed"
+          style="text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5)"
+        >
+          Rasakan perpaduan ayam renyah dan sambal pedas khas, kenikmatan
+          sederhana penuh kesempurnaan rasa.
+        </p>
+        <a
+          href="#reservation"
+          class="mt-4 inline-block py-4 px-12 text-lg font-bold text-white bg-primary rounded-2xl shadow-md hover:bg-white hover:text-primary transition-colors"
+        >
+          <strong>Reservasi Meja</strong>
+        </a>
+      </main>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="py-20 px-[7%]">
+      <h2 class="text-center text-4xl font-bold mb-12">
+        <span class="text-primary">Tentang</span> Kami
+      </h2>
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="flex-1">
+          <img
+            src="IMG/tentang.jpeg"
+            alt="Tentang Kami"
+            class="w-full [mask-image:url('IMG/MENU/tentang-beans.svg')] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
+          />
+        </div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold mb-4">
+            Solusi untuk Pecinta <span class="text-primary">Ayam</span>!
+          </h3>
+          <p class="mb-3 text-base font-light leading-relaxed">
+            Kedai Nayra hadir dengan menu khas ayam goreng renyah dan sambal
+            pedas khas yang dapat disesuaikan dengan selera. Kami selalu
+            menggunakan bahan segar dan bumbu pilihan, sehingga setiap sajian
+            menghadirkan rasa konsisten dan berkualitas.
+          </p>
+          <p class="mb-3 text-base font-light leading-relaxed">
+            Selain menjaga cita rasa, kami berkomitmen memberikan harga yang
+            terjangkau dan pelayanan ramah bagi setiap pelanggan. Ayam Geprek
+            Nayra menjadi pilihan tepat untuk makan siang, makan malam, ataupun
+            sekadar berkumpul bersama keluarga dan teman.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="py-20 px-[7%] text-center bg-bg">
+      <h2 class="text-center text-4xl font-bold mb-4">
+        <span class="text-primary">Menu</span> Kami
+      </h2>
+      <p class="max-w-md mx-auto font-light leading-relaxed mb-16">
+        Nikmati sajian terbaik kami yang diracik dengan sepenuh hati untuk
+        menghadirkan kepuasan di setiap gigitan.
+      </p>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8 justify-center"
+      >
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-palekko.jpeg"
+            alt="Ayam Palekko"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">- Ayam Palekko + Nasi -</h3>
+          <p class="text-base">IDR 13K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-bakar-1-ekor.jpeg"
+            alt="Ayam Bakar 1 Ekor"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">- Ayam Bakar 1 Ekor -</h3>
+          <p class="text-base">IDR 80K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-rame-rame.jpeg"
+            alt="Ayam Rame Rame"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">- Ayam Rame Rame -</h3>
+          <p class="text-base">IDR 75K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-lalapan.jpeg"
+            alt="Ayam Lalapan"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">- Ayam Lalapan -</h3>
+          <p class="text-base">IDR 25K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-goreng-ceker.jpeg"
+            alt="Ayam Goreng + Sop Ceker"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">
+            - Ayam Goreng + Sop Ceker -
+          </h3>
+          <p class="text-base">IDR 25K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-bakar-ceker.jpeg"
+            alt="Ayam Bakar + Sop Ceker"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">
+            - Ayam Bakar + Sop Ceker -
+          </h3>
+          <p class="text-base">IDR 25K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-geprek-sambal-ijo.jpeg"
+            alt="Ayam Geprek S-Ijo"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">
+            - Ayam Geprek S-Ijo + Nasi -
+          </h3>
+          <p class="text-base">IDR 13K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-geprek-sambal-merah.jpeg"
+            alt="Ayam Geprek S-Merah"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">
+            - Ayam Geprek S-Merah + Nasi -
+          </h3>
+          <p class="text-base">IDR 13K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-geprek-sambal-kemangi.jpeg"
+            alt="Ayam Geprek S-Kemangi"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">
+            - Ayam Geprek S-Kemangi + Nasi -
+          </h3>
+          <p class="text-base">IDR 13K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/ayam-geprek.jpeg"
+            alt="Ayam Geprek Tanpa Nasi"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">
+            - Ayam Geprek Tanpa Nasi -
+          </h3>
+          <p class="text-base">IDR 9K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/es-teh.jpeg"
+            alt="Es Teh"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">- Es Teh -</h3>
+          <p class="text-base">IDR 3K</p>
+        </div>
+        <div class="text-center">
+          <img
+            src="IMG/MENU/es-jeruk.jpeg"
+            alt="Es Jeruk"
+            class="w-2/3 mx-auto rounded-full shadow-lg hover:shadow-primary hover:scale-105 transition-all cursor-pointer"
+          />
+          <h3 class="mt-6 mb-2 text-lg font-bold">- Es Jeruk -</h3>
+          <p class="text-base">IDR 5K</p>
+        </div>
+      </div>
+
+      <a
+        href="#contact"
+        class="mt-12 inline-block py-4 px-12 text-lg font-bold text-white bg-primary rounded-2xl shadow-md hover:bg-white hover:text-primary transition-colors"
+      >
+        <strong>Pesan Sekarang</strong>
+      </a>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Reservation Section Start -->
+    <section id="reservation" class="py-20 px-[7%]">
+      <h2 class="text-center text-4xl font-bold mb-4">
+        <span class="text-primary">Reservasi</span> Meja
+      </h2>
+      <p class="text-center max-w-md mx-auto font-light leading-relaxed mb-12">
+        Bersama teman atau keluarga? Amankan tempat Anda di Kedai Nayra dengan
+        melakukan reservasi sekarang juga!
+      </p>
+      <div class="flex bg-[#222] rounded-3xl max-w-4xl mx-auto">
+        <form id="reservationForm" class="flex-1 p-8 text-center">
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="user"></i>
+            <input
+              type="text"
+              id="r_nama"
+              placeholder="Nama"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="phone"></i>
+            <input
+              type="number"
+              id="r_nomor"
+              placeholder="0123456789"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="users"></i>
+            <input
+              type="number"
+              id="r_jumlah"
+              placeholder="Jumlah Orang"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="triangle"></i>
+            <select
+              id="r_meja"
+              class="w-full p-4 text-lg bg-bg text-white ml-4 focus:outline-none"
+            >
+              <option value="">-- Pilih Meja --</option>
+              <option value="Meja halaman depan">Meja Depan (1-4 orang)</option>
+              <option value="Meja halaman belakang">
+                Meja Belakang (1-4 orang)
+              </option>
+              <option value="Gazebo Satu">Gazebo Satu (4-15 orang)</option>
+              <option value="Gazebo Dua">Gazebo Dua (4-15 orang)</option>
+              <option value="Gazebo Tiga">Gazebo Tiga (4-15 orang)</option>
+              <option value="Gazebo Empat">Gazebo Empat (4-15 orang)</option>
+              <option value="Gazebo Lima">Gazebo Lima (4-15 orang)</option>
+            </select>
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="clock"></i>
+            <input
+              type="time"
+              id="r_waktu"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="calendar"></i>
+            <input
+              type="date"
+              id="r_tanggal"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="edit-3"></i>
+            <input
+              type="text"
+              id="r_catatan"
+              placeholder="Tambahan"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            class="mt-12 inline-block py-4 px-12 text-xl text-white bg-primary rounded-2xl cursor-pointer hover:bg-white hover:text-primary transition-colors"
+          >
+            Reservasi Sekarang
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Reservation Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="py-20 px-[7%]">
+      <h2 class="text-center text-4xl font-bold mb-4">
+        <span class="text-primary">Kontak</span> Kami
+      </h2>
+      <p class="text-center max-w-md mx-auto font-light leading-relaxed mb-12">
+        Kami siap melayani Anda dengan mudah dan cepat. Gunakan peta untuk
+        menuju lokasi kami, atau isi form pemesanan agar pesanan Anda langsung
+        terhubung ke WhatsApp kami.
+      </p>
+      <div class="flex flex-col md:flex-row bg-[#222] rounded-3xl">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7947.8691023677175!2d120.25255900000002!3d-5.114251!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDYnNDkuMiJTIDEyMMKwMTUnMTIuMyJF!5e0!3m2!1sid!2sid!4v1759002641279!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full flex-1 h-96 md:h-auto rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none object-cover"
+        ></iframe>
+        <form id="contactForm" class="flex-1 p-8 text-center">
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="user"></i>
+            <input
+              type="text"
+              id="c_nama"
+              placeholder="Nama"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="phone"></i>
+            <input
+              type="number"
+              id="c_nomor"
+              placeholder="0123456789"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="home"></i>
+            <input
+              type="text"
+              id="c_alamat"
+              placeholder="Alamat"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="clock"></i>
+            <input
+              type="time"
+              id="c_waktu"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="shopping-cart"></i>
+            <input
+              type="text"
+              id="c_pesanan"
+              placeholder="Pesanan Anda..."
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <div
+            class="flex items-center mt-8 bg-bg border border-gray-700 px-8 rounded-lg"
+          >
+            <i data-feather="edit-3"></i>
+            <input
+              type="text"
+              id="c_tambahan"
+              placeholder="Catatan Tambahan"
+              class="w-full p-2 text-xl bg-transparent text-white ml-4 focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            class="mt-12 inline-block py-4 px-12 text-xl text-white bg-primary rounded-2xl cursor-pointer hover:bg-white hover:text-primary transition-colors"
+          >
+            Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-primary text-center py-8 mt-12">
+      <div class="flex justify-center gap-6 mb-4">
+        <a
+          href="https://wa.me/6281242337310"
+          target="_blank"
+          class="text-white hover:text-bg"
+          ><i data-feather="message-circle"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/kedai_nayra01"
+          target="_blank"
+          class="text-white hover:text-bg"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/elviani.akil"
+          target="_blank"
+          class="text-white hover:text-bg"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a
+          href="https://maps.app.goo.gl/o5nomJsb5vwX9qtm6"
+          target="_blank"
+          class="text-white hover:text-bg"
+          ><i data-feather="map-pin"></i
+        ></a>
+      </div>
+      <div class="mb-4">
+        <a href="#home" class="px-3 text-white hover:text-bg">Home</a>
+        <a href="#about" class="px-3 text-white hover:text-bg">Tentang Kami</a>
+        <a href="#menu" class="px-3 text-white hover:text-bg">Menu</a>
+        <a href="#reservation" class="px-3 text-white hover:text-bg"
+          >Reservasi</a
+        >
+        <a href="#contact" class="px-3 text-white hover:text-bg">Kontak</a>
+      </div>
+      <div>
+        <p class="text-sm">
+          Created by
+          <a
+            href="https://www.instagram.com/27_elnino"
+            target="_blank"
+            class="font-bold text-bg"
+            >washiatulakmal</a
+          >. | © 2025
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Script JS -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
