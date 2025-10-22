@@ -8,10 +8,10 @@ Sebuah aplikasi web berbasis PHP dan MySQL yang memungkinkan pengguna untuk memb
 
 * **Otentikasi Pengguna:** Sistem pendaftaran (register) dan masuk (login) yang aman menggunakan *password hashing*.
 * **Manajemen Catatan (CRUD):**
-    **Create:** Menulis dan menyimpan catatan diary baru.
-    **Read:** Menampilkan daftar catatan berdasarkan hari (Senin-Minggu).
-    **Update:** Mengedit catatan yang sudah ada.
-    **Delete:** Menghapus catatan.
+  * **Create:** Menulis dan menyimpan catatan diary baru.
+  * **Read:** Menampilkan daftar catatan berdasarkan hari (Senin-Minggu).
+  * **Update:** Mengedit catatan yang sudah ada.
+  * **Delete:** Menghapus catatan.
 * **Isolasi Data:** Setiap pengguna hanya dapat melihat dan mengelola catatannya sendiri.
 * **Tampilan Responsif:** Desain antarmuka yang dapat beradaptasi dengan baik di layar desktop maupun mobile.
 
